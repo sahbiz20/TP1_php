@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+{% block title %} {{ parent() }}S'inscrire {% endblock %}
+
+{% block contenu %}  
+<form action="index.php?page=formulaire"method="post">      
+
+<label for="titre">Titre: </label><br>
+<input type="text" id="titre" name="titre" value="titre"><br>
+
+<label for="textArea">Contenu: </label>
+<textarea id="textArea" name="textArea" rows="4" cols="50"></textarea> 
+
+<button class="btn btn-lg btn-primary btn-block" type="submit" name="btnTP">envoyer actualite</button> </form>
+{% endblock %}
